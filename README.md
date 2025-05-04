@@ -1,4 +1,4 @@
-This code is the speed comparison of KV Caching on/off.
+This code is the speed comparison of KV Caching on/off.<br>
 本代码是，KV Caching打开/关闭的速度对比。<br>
 
 介绍<br>
@@ -13,8 +13,8 @@ KV Caching（键值缓存） 是在生成文本时缓存前面计算过的注意
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 直接进行注意力操作，省去了重复计算<br>
 
 对比不使用 caching 的情况：<br>
-    ·不加缓存：<br>
-        - 每次都重新计算前面所有 K/V，开销是 O(n²)<br>
-    ·加了缓存：<br>
-        - 每次只算新的 token，前面的直接复用，开销降到 O(n)<br>
-        - 生成越多 token，速度优势就越明显！<br>
+&nbsp;&nbsp;&nbsp;&nbsp;·不加缓存：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 每次都重新计算前面所有 K/V，开销是 O(n²)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;·加了缓存：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 每次只算新的 token，前面的直接复用，开销降到 O(n)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 生成越多 token，速度优势就越明显！<br>
