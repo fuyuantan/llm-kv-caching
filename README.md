@@ -4,7 +4,7 @@ This code is the speed comparison of KV Caching on/off.
 介绍<br>
 KV Caching（键值缓存） 是在生成文本时缓存前面计算过的注意力键（Key）和值（Value），避免重复计算，从而加快推理速度。<br>
 
-有了 KV Caching 怎么样？<br>
+有了 KV Caching 怎么样？
     ·第一次生成 token 时：<br>
         - 模型算出前面所有 token 的 K、V，并保存下来<br>
     ·第二个 token 开始：<br>
